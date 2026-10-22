@@ -297,6 +297,10 @@ body.scrolled .scroll-cue{opacity:0!important;pointer-events:none;transition-del
 @media (prefers-reduced-motion:reduce){.gate-btn,.gate-btn::after,.scroll-cue svg{animation:none!important}}
 @media print{.scroll-cue{display:none}}
 header.cover .gate-btn{background:linear-gradient(135deg,#fffaf2,#f7e2c4)!important;color:#5a1a24!important;font-weight:bold;border:1.5px solid #c9a96a!important}
+/* Scroll cue: one line, small, bottom-left so it does not cover the couple */
+.scroll-cue{left:14px!important;right:auto!important;bottom:18px!important;transform:none!important;flex-direction:row!important;gap:5px!important;padding:6px 12px!important;font-size:11px!important;white-space:nowrap}
+.scroll-cue svg{width:14px!important;height:14px!important}
+@media(max-width:420px){.scroll-cue{left:12px!important}}
 </style>
 </head>
 <body class="theme-floral">
